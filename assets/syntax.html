@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>JoyToy Reference(Syntax)</title>
+</head>
+<body>
+
+<h3>JoyToy Syntax</h3>
+
+<a href="index.html">Home</a>
+<br />
+<br />
+<br />
+
+<ol>
+  <li>Usually statements evaluated from text-head to text-end.</li>
+  <li>if<br />
+    <blockquote>
+    if(condition){ then-statements } else { else-statements };<br />
+    -- if 'conditon' is true, then evaluate 'then-statements' else 'else-statements'.<br />
+    -- after 'else' is optional.
+    </blockquote>
+  </li>
+  <li>while
+    <blockquote>
+    while(condition){ statements };<br />
+    -- while 'condition' is true, then evaluate statements.
+    </blockquote>
+  </li>
+  <li>built-in operators
+    <blockquote>
+    +, -, *, /, <, <=, >, >=
+    </blockquote>
+  </li>
+  <li>define variable
+    <blockquote>
+    def variableName;<br />
+    def variableName = initialValue;<br />
+    </blockquote>
+  </li>
+  <li>define method
+    <blockquote>
+    fun methodName(){ statements };<br />
+    fun methodName(arg1, arg2, ..., argN){ statements };
+    </blockquote>
+  </li>
+  <li>call method
+    <blockquote>
+    methodName();<br/>
+    methodName(arg1, arg2, ..., argN){ statements };
+    </blockquote>
+  </li>
+  <li>object
+    <blockquote>
+    object { 'define valiable' or 'define method' list };
+    -- ex.<br />
+      <blockquote>
+      def obj = object { def a = 1; def b = 2; fun f(n){ n + a; }; fun g(n){ n * b; }; };
+      </blockquote>
+    </blockquote>
+  </li>
+  <li>call object's method
+    <blockquote>
+    objectName.methodName();<br />
+    objectName.methodName(arg1, arg2, ..., argN);
+    </blockquote>
+  </li>
+  <li>clone object
+    <blockquote>
+    new objectName;<br />
+    -- ex.  def obj2 = new objectName;
+    </blockquote>
+  </li>
+  <li>multiple derived object
+    <blockquote>
+    objectName1 + objectName2;<br />
+    -- ex. def obj3 = obj1 + obj2;
+    </blockquote>
+  </li>
+</ol>
+
+
+</body>
+</html>

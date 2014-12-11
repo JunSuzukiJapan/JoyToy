@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/main_view"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/LinearLayout00"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:orientation="vertical" android:layout_width="wrap_content"
+			android:layout_weight="1"
+			android:layout_height="fill_parent">
+
+			<EditText android:id="@+id/edit_view" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:text="" android:scrollHorizontally="true"
+				android:singleLine="false" android:textSize="12sp" android:lines="25">
+			</EditText>
+
+			<LinearLayout android:id="@+id/AbsoluteLayout01"
+				android:orientation="horizontal" android:layout_height="wrap_content"
+				android:layout_width="fill_parent">
+
+				<Button android:id="@+id/eval_button" android:layout_width="wrap_content"
+					android:layout_height="44px" android:text="Eval">
+				</Button>
+
+				<Button android:id="@+id/load_button" android:layout_width="wrap_content"
+					android:layout_height="44px" android:text="Load">
+				</Button>
+
+				<Button android:id="@+id/save_button" android:layout_width="wrap_content"
+					android:layout_height="44px" android:text="Save">
+				</Button>
+
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/content_view"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:maxWidth="200px" android:orientation="vertical">
+
+
+			<LinearLayout android:id="@+id/console_view"
+				android:visibility="visible" android:orientation="vertical"
+				android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+				<TextView android:id="@+id/text_view" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/darkgray"
+					android:scrollHorizontally="true"
+					android:scrollbarAlwaysDrawHorizontalTrack="true"
+					android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="horizontal|vertical"
+					android:scrollbarStyle="insideOverlay" android:textSize="12sp"
+					android:focusable="true" android:singleLine="false"
+					android:layout_weight="1" android:minWidth="160px" android:maxWidth="200px">
+				</TextView>
+
+				<LinearLayout android:id="@+id/buttons2"
+					android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+					<Button android:id="@+id/clear_button" android:layout_width="wrap_content"
+						android:layout_height="44px" android:text="Clear">
+					</Button>
+
+					<Button android:id="@+id/reference_button"
+						android:layout_width="wrap_content" android:layout_height="44px"
+						android:text="Help">
+					</Button>
+
+
+				</LinearLayout>
+			</LinearLayout>
+
+
+			
+
+
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

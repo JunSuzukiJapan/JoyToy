@@ -1,0 +1,22 @@
+/*
+ * Example: object 2
+ */
+ 
+o1 = object {
+  def a = 1;
+  fun f(n){
+    n + a;
+  };
+};
+
+o2 = new o1;  // make o1 clone.
+print("<< print o2 >>");
+print(o2.a);
+print(o2.f(7));
+
+o3 = new o1 {  // make o1 clone.
+  a = 2;       // initialize derived variable 'a'.
+};
+print("<< print o3 >>");
+print(o3.a);
+print(o3.f(8));

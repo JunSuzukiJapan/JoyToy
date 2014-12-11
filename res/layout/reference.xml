@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/reference_view"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:maxWidth="200px" android:layout_height="fill_parent"
+	android:visibility="visible">
+
+	<FrameLayout android:id="@+id/web_frame"
+		android:layout_width="120px" android:layout_height="wrap_content"
+		android:layout_weight="1">
+		<WebView android:id="@+id/reference_web_view"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:focusable="true">
+		</WebView>
+		<!--
+			android:scrollHorizontally="true"
+			android:scrollbarAlwaysDrawHorizontalTrack="true"
+			android:scrollbarAlwaysDrawVerticalTrack="true"
+			android:scrollbars="horizontal|vertical"
+			android:scrollbarStyle="insideOverlay"
+			android:background="@drawable/darkgray" android:textSize="12sp"
+			android:singleLine="false"
+		-->
+	</FrameLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout05"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<Button android:id="@+id/backward_button" android:text=" &lt; "
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+		<Button android:id="@+id/forward_button" android:text=" &gt; "
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+		<Button android:id="@+id/return_button" android:text="Return"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+	</LinearLayout>
+
+</LinearLayout>

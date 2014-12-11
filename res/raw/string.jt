@@ -1,0 +1,7 @@
+/*
+ * Example: string's method.
+ */
+ 
+s = "Hello, world.";
+print(s);
+print(s.substring(0, 5));

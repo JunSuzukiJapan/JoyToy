@@ -1,0 +1,24 @@
+/*
+ * Example: object 3
+ */
+ 
+obj1 = object {
+  def a = 1;
+  fun f(n){
+    n + a;
+  };
+};
+
+obj2 = object {
+  def b = 2;
+  fun g(n){
+    n * b;
+  };
+};
+
+obj3 = obj1 + obj2; // obj3 is derived from obj1 and obj2
+
+print(obj3.a);
+print(obj3.b);
+print(obj3.f(3));
+print(obj3.g(4));

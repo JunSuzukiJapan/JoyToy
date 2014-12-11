@@ -1,0 +1,13 @@
+/*
+ * Example: User defined function.
+ */
+ 
+fun f(x){
+  if(x == 1){
+    1;
+  }else{
+    x * f(x - 1);
+  };
+};
+
+print(f(10));

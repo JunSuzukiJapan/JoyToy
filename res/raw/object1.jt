@@ -1,0 +1,10 @@
+/*
+ * Example: object 1
+ */
+ 
+o = object {
+  def x = 3;
+};
+print(o.x);
+o.x = 4;
+print(o.x);
